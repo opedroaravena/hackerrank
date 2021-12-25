@@ -1,0 +1,22 @@
+{
+  "name": "hackerrank",
+  "version": "1.0.0",
+  "description": "Hackerrank Algorithms challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opedroaravena/hackerrank.git"
+  },
+  "author": "Pedro Aravena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opedroaravena/hackerrank/issues"
+  },
+  "homepage": "https://github.com/opedroaravena/hackerrank#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
