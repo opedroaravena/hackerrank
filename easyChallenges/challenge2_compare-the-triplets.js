@@ -15,7 +15,7 @@ function compareTriplets(a, b) {
             continue; // they both get zero points so skip
         }
     }
-    console.log([aliceTotal, bobTotal])
+    return [aliceTotal, bobTotal]
 }
 
 compareTriplets([17, 28, 30], [99, 16, 8])
