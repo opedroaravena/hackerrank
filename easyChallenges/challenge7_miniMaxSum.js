@@ -1,22 +1,26 @@
 function miniMaxSum(arr) {
-  var min = Math.min(...arr);
-  var max = Math.max(...arr);
 
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i] === max) {
-        arr.splice(i, 1);
+    let min = Math.min(...arr)
+    let max = Math.max(...arr)
+  
+    var indexMin = arr.indexOf(min)
+    if(indexMin > -1){
+     arr.splice(indexMin,1)
+     var sumMax = 0
+      for(var i = 0; i < arr.length; i++){
+        sumMax+=arr[i]
       }
     }
-    var sumMax = arr.reduce((partialSum, a) => partialSum + a, 0);
-    
-    for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === min) {
-        arr.splice(i, 1)
-        arr.push(i, min)
+    arr.push(min)
 
+    var indexMax = arr.indexOf(max)
+    if(indexMax > -1){
+     arr.splice(indexMax,1)
+     var sumMin = 0
+      for(var i = 0; i < arr.length; i++){
+        sumMin+=arr[i]
       }
     }
-    var sumMin = arr.reduce((partialSum, a) => partialSum + a, 0);
-    console.log(sumMax, sumMin)
+    console.log(sumMin, sumMax)
 }
-miniMaxSum([7, 69, 2 , 221 , 8974]);
+miniMaxSum([1, 3, 5, 7, 9]);
